@@ -5,7 +5,7 @@ API reference
 
 .. toctree::
 
-   api/lclib.base
+   lclib.base
 
 .. automodule:: lclib
    :members:
