@@ -237,7 +237,6 @@ def init(lab_name,
 # from . import ui
 
 from lclib import *
-from lclib.logs import *
+from lclib.ui import *
 from lclib.util import *
-from lclib.proxydevice import *
 
