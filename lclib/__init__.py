@@ -236,12 +236,8 @@ def init(lab_name,
 # from . import camera
 # from . import ui
 
-from lclib.proxydevice import *
-from lclib.util import *
 from lclib import *
 from lclib.logs import *
-from lclib._version import *
-from lclib import *
-from lclib import *
-from lclib import *
+from lclib.util import *
+from lclib.proxydevice import *
 
