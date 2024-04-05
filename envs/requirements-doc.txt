@@ -4,4 +4,3 @@ sphinxcontrib-bibtex >=2, <3
 chardet
 gitpython
 rpyc
-subprocess
