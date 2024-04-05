@@ -21,6 +21,9 @@ from lclib.logs import logger as rootlogger
 
 __docformat__ = 'restructuredtext en'
 __all__ = ['DriverBase',
+           'MotorLimitsException',
+           'DeviceException',
+           'SocketDriverBase'
            ]
 
 

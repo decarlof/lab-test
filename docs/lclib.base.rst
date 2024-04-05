@@ -11,3 +11,7 @@
    .. autosummary::
    
       DriverBase
+      DriverBase
+      MotorLimitsException
+      DeviceException
+      SocketDriverBase
