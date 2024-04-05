@@ -464,3 +464,10 @@ autodoc_mock_imports = ['wcwidth',
                         'atexit', 
                         'errno',]
 
+# Mock a dictionary
+from unittest.mock import Mock
+from rpyc.core.vinegar import _generic_exceptions_cache
+
+blah = Mock()
+blah.__getitem__ = Mock()
+blah.__getitem__.side_effect = _generic_exceptions_cache.__getitem__
