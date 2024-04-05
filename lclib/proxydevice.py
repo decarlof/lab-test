@@ -107,8 +107,7 @@ class ProxyDeviceError(Exception):
 
 
 # Register custom error
-rpyc.core.vinegar._generic_exceptions_cache[
-    "lclib.util.proxydevice.ProxyDeviceError"] = ProxyDeviceError
+rpyc.core.vinegar._generic_exceptions_cache["lclib.util.proxydevice.ProxyDeviceError"] = ProxyDeviceError
 
 
 class ThreadedServer(rpyc.ThreadedServer):

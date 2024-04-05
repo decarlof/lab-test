@@ -15,17 +15,9 @@ import socket
 import signal
 from select import select
 
-from lclib import proxycall, get_config
-from lclib.util import FileDict, Future
-from lclib.logs import logger as rootlogger
-
-__docformat__ = 'restructuredtext en'
-__all__ = ['DriverBase',
-           'MotorLimitsException',
-           'DeviceException',
-           'SocketDriverBase'
-           ]
-
+from . import proxycall, get_config
+from .util import FileDict, Future
+from .logs import logger as rootlogger
 
 class MotorLimitsException(Exception):
     pass
@@ -85,18 +77,7 @@ class emergency_stop:
 
 class DriverBase:
     """
-    Determine the current run
-
-    Parameters
-    ----------
-    auth : Basic http authorization object
-        Basic http authorization.
-
-
-    Returns
-    -------
-    run : string
-        Run name 2024-1.
+    Base for all drivers
     """
 
     logger = None                       # Place-holder. Gets defined at construction.
