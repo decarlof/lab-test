@@ -462,7 +462,8 @@ autodoc_mock_imports = ['wcwidth',
                         'logging', 
                         'select',
                         'atexit', 
-                        'errno',]
+                        'errno',
+                        'subprocess']
 
 # Mock a dictionary
 from unittest.mock import Mock
